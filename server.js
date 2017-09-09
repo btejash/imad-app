@@ -12,6 +12,7 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+
 /* for cforum site access provided to folder all files if name is correctly provided */
 app.get('/cforum', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'cforum.html'));
@@ -28,6 +29,7 @@ app.get('/animate1/Images1/:filename1', function (req, res) {
     var filename2 = req.params.filename1
   res.sendFile(path.join(__dirname, 'ui/animate1/Images1', filename2));
 });
+/* cforum related ends here */
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
