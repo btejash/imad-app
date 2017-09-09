@@ -17,6 +17,14 @@ app.get('/:filename1', function (req, res) {
     var filename2 = req.params.filename1
   res.sendFile(path.join(__dirname, 'ui', filename2));
 });
+app.get('/assets1/:filename1', function (req, res) {
+    var filename2 = req.params.filename1
+  res.sendFile(path.join(__dirname, 'ui/assets1', filename2));
+});
+app.get('/animate1/:filename1', function (req, res) {
+    var filename2 = req.params.filename1
+  res.sendFile(path.join(__dirname, 'ui/animate1', filename2));
+});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
