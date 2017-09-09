@@ -25,9 +25,9 @@ app.get('/animate1/:filename1', function (req, res) {
     var filename2 = req.params.filename1
   res.sendFile(path.join(__dirname, 'ui/animate1', filename2));
 });
-app.get('/animate1/images1/:filename1', function (req, res) {
+app.get('/animate1/Images1/:filename1', function (req, res) {
     var filename2 = req.params.filename1
-  res.sendFile(path.join(__dirname, 'ui/animate1/images1', filename2));
+  res.sendFile(path.join(__dirname, 'ui/animate1/Images1', filename2));
 });
 
 app.get('/ui/madi.png', function (req, res) {
