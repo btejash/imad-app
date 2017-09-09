@@ -1,0 +1,2 @@
+Images set at 1280*400
+and for mobile at 600*187px

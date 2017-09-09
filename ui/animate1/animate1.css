@@ -1,0 +1,120 @@
+/*  Essential styles: these make the slideshow work  */
+
+#slides{ position: relative; 
+  /* for mobile devices first  */   
+    width:100%;   height:94px;  /*  for 300px*/
+	padding: 0px;	margin: 0px;
+	list-style-type: none;
+}
+
+.slide{ position: absolute;	left: 0px; 	top: 0px; z-index: 1;
+	width: 100%;	height: 100%;	opacity: 0; 
+}
+
+.slide, .controls {
+	-webkit-transition: all 3s;
+	-moz-transition: all 3s;
+	-o-transition: all 3s;
+	transition: all 3s;
+}
+
+.showing { opacity: 1;	z-index: 2;  }
+.controls { display: none; }
+
+/* non-essential styles - just for appearance; */
+.slide  {   font-size: 0px;	padding: 0px;	box-sizing: border-box;
+	       background: #333;	color: #fff;  background-color: white;  background-size: cover; 
+        }
+
+@media only screen and (max-width: 601px){
+     /* for less than 150px */ 
+      .iconsfontsize1{font-size: 9px;}
+    
+    /* Mobile image setting is here */
+    .slide:nth-of-type(1){  background-image: url('images1/image1m.jpg'); }
+    .slide:nth-of-type(2){  background-image: url('images1/image2m.jpg'); }
+    .slide:nth-of-type(3){  background-image: url('images1/image3m.jpg'); }
+    .slide:nth-of-type(4){  background-image: url('images1/image4m.jpg'); }
+    .slide:nth-of-type(5){  background-image: url('images1/image5m.jpg'); }
+    @media only screen and (min-width: 200px){ 
+        /* for 150px */ 
+      
+         .iconsfontsize1{font-size: 12px;}
+ 
+        @media only screen and (min-width: 350px){ /* for 400px */ #slides { height:109px; } 
+                         .iconsfontsize1{font-size: 15px;}
+            
+            @media only screen and (min-width: 400px){ /* for 500px */ #slides { height:125px; } 
+                  
+                @media only screen and (min-width: 450px){ /* for 400px */ #slides { height:141px; }  
+                    @media only screen and (min-width: 500px){ /* for 500px */ #slides { height:156px; }  
+                        @media only screen and (min-width: 550px){ /* for 500px */ #slides { height:172px; }  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 601px) {
+  /* desktop image setting is here -first for 600px and above */
+    #slides { height:187px; } 
+
+    .slide:nth-of-type(1){  background-image: url('images1/image1.jpg'); }
+    .slide:nth-of-type(2){  background-image: url('images1/image2.jpg'); }
+    .slide:nth-of-type(3){  background-image: url('images1/image3.jpg'); }
+    .slide:nth-of-type(4){  background-image: url('images1/image4.jpg'); }
+    .slide:nth-of-type(5){  background-image: url('images1/image5.jpg'); }
+
+    .iconsfontsize1{font-size: 19px;}
+/*        .controls {font-size: 13.5px;}
+        .prenxt {font-size: 26px;}
+        .buttons {line-height: 26px; text-align: center; vertical-align:middle;}
+  */  
+    @media only screen and (min-width: 700px) { /* for 700px */ #slides { height:219px; }
+        @media only screen and (min-width: 800px) { /* for 800px */ #slides { height:250px; } 
+    /*        .controls {font-size: 16px;}
+            .prenxt {font-size: 30px;}
+            .buttons {line-height: 26px; text-align: center; vertical-align:middle;}
+      */      
+            @media only screen and (min-width: 900px) { /* for 900px */ #slides { height:281px; } 
+                @media only screen and (min-width: 1000px) { /* for 1000px */ #slides { height:313px; } 
+                    @media only screen and (min-width: 1100px) { /* for 1100px */ #slides { height:344px; } 
+                        @media only screen and (min-width: 1270px) { /* for 1270px */ #slides { height:400px; } 
+                            @media only screen and (min-width: 1350px) { /* for 1350px */ #slides { height:422px; } 
+                                @media only screen and (min-width: 1500px) { /* for 1500px */ #slides { height:469px; } }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.controls { background:none; color:#eeeeee; /* color: #fff;*/ text-decoration: none;
+            border: none;   padding: 0px 0px; margin:0px;
+           
+            cursor: pointer; vertical-align: middle;          
+            /*
+            transition: color 1s ease; */
+}
+
+/* font-size adjusted in @media section for controls and prenext buttons - depending on em units*/
+/*  .iconsfontsize1 {font-size: 22px;}  */
+
+
+.controls:hover, .controls:focus { color: #555;  }
+
+/* container1 position is relative to body for placing controls properly*/
+.container1{  position: relative; width:100%; padding: 0px; margin: 0px; }
+
+.buttons{  position: absolute;  left: 1%;  bottom: -1px;  z-index: 3;
+  background-color:transparent;  padding: 0px; margin: 0px; }
+
+.iconsfontsize1 {padding:0px; margin:0px; letter-spacing:-0.1em; }
+.prenxt {font-size:1.6em; letter-spacing:-0.2em; white-space: pre-line; }
+#pause {font-size: 1.2em; letter-spacing: 0em; }
+
+.dot {  margin: 0px;  border-radius: 100%;   padding: 0px; }
+.activedot { color: #717171; }
