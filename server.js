@@ -12,10 +12,9 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
-app.get('/:filename1', function (req, res) {
-    var filename2 = req.params.filename1
-  res.sendFile(path.join(__dirname, 'ui', filename2));
+/* for cforum site access provided to folder all files if name is correctly provided */
+app.get('/cforum', function (req, res) {
+     res.sendFile(path.join(__dirname, 'ui', 'cforum.html'));
 });
 app.get('/assets1/:filename1', function (req, res) {
     var filename2 = req.params.filename1
