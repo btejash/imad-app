@@ -1,0 +1,135 @@
+/*Standard box sizing and other overall responsive code -font setting also done in here*/
+ * { box-sizing: border-box; margin:0; padding:0;  }
+ html { font-family: 'Roboto', "Lucida Sans", sans-serif; }
+
+/* For mobile phones: Small Display */
+ @media screen and (max-width: 599.99px) {
+    /* Font Settings for Heading(tfonth) Subheading(tfonts) and Menu(tfontm) */
+        .tfonth {font-size: 4.3vw; }
+        .tfonts {font-size: 3.5vw; }
+        .tfontm {font-size: 9vw;  }
+     .f-lovers {font-weight:bold; }
+    /* logo and heading settings*/
+        .logo1 {width: 14vw; height:10.5vw;  margin: 3px 0px;}
+        .conameblk { margin: 1vw 1px 0px 0px; }
+  
+     /*Nav menu settings - Common content*/ 
+     .welcome1 {display:none;}
+            .navmenu-btn {display: block;}
+             .navmenu-content {display: none;}
+           .navmenu:focus .navmenu-content { display: block; } 
+            .navmenu:hover .navmenu-content { display: block; }
+            
+            .navmenu-content {  position: absolute; right:0; z-index: 3;
+                                background-color: #f9f9f9; min-width: 120px;
+                                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4); border-radius: 15px; }
+
+            .navmenuitem1 { display:block; text-decoration: none; color: #131379; padding: 2px 18px; }
+            .navmenuitem1:hover {background-color: #131379 ;  color: white; border-radius: 15px;}
+
+            .navmenu-btn {font-size: 7vw ; padding:2px 3px 2px 3px; margin:3px 0px 0px 0px; background-color: #131379; color: white;
+                        border:none; border-radius: 5px; text-align:center; text-decoration: none;}
+            .navmenu-btn:hover{ background-color:rgba(19, 19, 121, 0.77);}
+        
+     /*  Top nav bar padding adjustment for body alignment */
+        .toppaddingbuffer {padding-top:16vw;}
+ 
+ /* For mobile phones: Bigger Display */
+   @media only screen and (min-width: 310px) and (max-width: 600px) {
+    /* Font Settings for Heading(tfonth) Subheading(tfonts) and Menu(tfontm) */
+        .tfonth {font-size: 16px; }
+        .tfonts {font-size: 13px; }
+       .tfontm {font-size: 27px; }
+     
+    /* logo and heading settings*/
+        .logo1 {width: 48px; height:36px; margin-left:0px;}
+        .conameblk { margin: 1px 1px 0px 0px; }
+        .conameca{padding-top: 1px;}
+    /* Nav menu settings - Specific content*/ 
+        .navmenu-btn{font-size: 22px ; }
+    /* Top nav bar padding adjustment for body alignment */
+    .toppaddingbuffer{padding-top:50px;}
+  }
+ }
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    /* Font Settings for Heading(tfonth) Subheading(tfonts) and Menu(tfontm) */
+        .tfonth {font-size: 19.5px; }
+        .tfonts {font-size: 16px; }
+        .tfontm {font-size: 28px; }
+      .f-lovers { font-weight:bolder; }
+    /* logo and heading settings*/
+        .logo1 {width: 72px; height:54px;  margin: 5px 1px 5px 1px;}
+        .conameblk { margin: 4px 1px 0px 0px;}
+        .conameca{padding-top: 5px;}
+    /*Nav menu settings - Common content*/ 
+    .welcome1 {display:block; font-size:13px; float:right; color:#131379; padding:0px 10px; }
+        .menupos2 {bottom:1px;}
+        .navmenu-btn {display: none}
+        .navmenu-content {display:block;}
+        .navmenuitem1 { float: left; display: block; text-decoration: none;
+                           color: #131379; text-align: center; margin:0px; border-radius: 50%;  }
+        .navmenuitem1:hover , .navmenuactive1 { background-color: rgba(19, 19, 121, 0.77) ;  color: white; border-color:white; }
+    /* Nav menu settings - Specific content */
+        .navmenuitem1 { padding: 3px 8px; }
+        .navmenuitem1:hover , .navmenuactive1 { padding:1px 6px; border: 2px ; border-style:solid; border-color: white;}
+           
+ /*  Top nav bar padding adjustment for body alignment */
+        .toppaddingbuffer {padding-top:75px;}
+
+   
+/* For Desktops: */
+    @media only screen and (min-width: 800px) {
+    /* Font Settings for Heading(dfonth) Subheading(dfonts) and Menu(dfontm) */
+        .tfonth {font-size: 26px; }
+        .tfonts {font-size: 21px; }
+        .tfontm {font-size: 32px; }
+       
+     /* logo and heading settings*/
+        .logo1 {width: 88px; height:66px; }
+       .conameblk { margin: 6px 1px 0px 0px; }
+        .conameca{padding-top: 3px;}
+    /* Nav menu settings - Specific content */
+        .welcome1 {font-size:15px;padding:0px 15px; }
+       .navmenuitem1 { padding: 3px 12px; }
+        .navmenuitem1:hover , .navmenuactive1{ padding:1px 10px; border: 2px ; border-style:solid; border-color: white; }
+     
+ /*  Top nav bar padding adjustment for body alignment */
+        .toppaddingbuffer {padding-top:87px;}   
+    }
+}
+/* Code for Fixed Navigation bar goes here */
+    .nav-top {  top:0; display: block; float:left; position:fixed; z-index:5;
+                width:100%; height:auto; background-color: #ffffff; color:#000000 ; 
+                padding:2px 0px 0px 0px; margin: 0px 0px 0px 0px; border-bottom:3px; border-bottom-color: #131379 ; border-bottom-style:solid; }
+
+/*CA Logo related formatting code goes here and size related media query setting goes in @media section */
+    .logo1 {float:left;}
+
+/*Company name related formatting code goes here and font size related media query setting goes in @media section */
+    .conameblk { position:absolute; top:0; float:left; }
+    .coname { padding: 0px 0px 1px 0px ; text-decoration: none;text-align: left;float:left; color:#131379;
+              border-bottom:1px; border-bottom-color: #131379 ; border-bottom-style:solid;white-space:nowrap; }
+    
+    .conameca { text-align: left; text-decoration: none; clear:left; float:left; color:red;}
+
+/* Menu in Navbar related code starts here and responsive size related media query setting goes in @media section*/
+    .menupos2 { position:absolute;  right:2px; }
+.navmenu-content a {text-decoration: none;}
+.navmenu-content a:hover {cursor:pointer;}
+.logout1 {display:none;}
+.login1 {display:block;}
+
+
+/*  Top nav bar padding adjustment for body alignment -margin set to zero to avoid any defaults */ 
+    .toppaddingbuffer {margin:0px;}
+
+/*
+Available fonts: */
+
+.f-rye { font-family: 'Rye', cursive; }
+.f-handlee { font-family: 'Handlee', cursive;}
+.f-lovers { font-family: 'Lovers Quarrel', cursive;  } 
+.f-pacifico { font-family: 'Pacifico', cursive; }
+

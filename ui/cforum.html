@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Community Forum</title>
+<meta charset="UTF-8">
+<meta name="description" content="Community Forum, a place where experiences are felt again by one and all like minded people in community through sharing and free flow of thoughts and expressions">
+<meta name="keywords" content="Community Forum Blogs comments ideas share personal food travel experiences kids">
+<meta name="author" content="Tejash Bhanusali">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Rye|Lovers+Quarrel|Pacifico|Handlee|Roboto" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="assets1/topnav.css" type="text/css">
+<link rel="stylesheet" href="animate1/animate1.css" type="text/css">
+<link rel="stylesheet" href="assets1/main1.css" type="text/css">
+<link rel="stylesheet" href="assets1/footer-css.css" type="text/css">
+
+</head>
+<body>
+<!-- Top Navigation Bar starts here -->
+<div class="nav-top" id="navbar">
+    <!-- Company logo and Company name wrapper -->
+    <div class="cologo">
+      <img src="assets1/logo.jpg" Alt="Community Logo" class="logo1"> 
+         <span class="conameblk">
+           <span class="coname tfonth f-rye">Community Forum</span>
+            <span class="conameca tfonts f-handlee">Where every expression counts...</span> 
+        </span>
+    </div>
+    <!-- Navigation menu wrapper  -->  
+        <div class="menupos1">
+        <span class="welcome1 f-pacifico">Welcome, <span class="username1" style="color:red;">Guest</span>
+            </span>
+        <div class="menupos2">
+            <div class="navmenu"> 
+          <button class="navmenu-btn">&#9776;</button>
+              
+            <div class="navmenu-content tfontm f-lovers">
+                <a href="#home1" class="navmenuitem1 navmenuactive1">Home</a>
+                <a href="#posts1"class="navmenuitem1">Posts</a>
+                <a class="navmenuitem1 login1" onclick="loginf1();">Login</a>
+                <a class="navmenuitem1 login1" onclick="registerf1();">Register</a>
+               <a href="#logout1" class="navmenuitem1 logout1">Logout</a>
+            </div>
+            </div>
+        </div>
+            
+    </div>
+</div>
+<div class="toppaddingbuffer" id="home1"> </div>
+<!-- Top Navigation Bar ends here -->
+
+<!-- Hero container area starts here for main body -->
+
+<div class="container1" >
+  <ul id="slides">
+    <li class="slide showing" ></li>
+    <li class="slide"></li>
+    <li class="slide"></li>   
+    <li class="slide"></li>   
+    <li class="slide"></li>   
+    
+  </ul>
+    
+  <div class="buttons"><i class="material-icons iconsfontsize1">
+    <span class="controls prenxt" id="previous">navigate_before</span>
+    <span class="controls" id="pause">pause_circle_outline</span>
+    
+    <span class="controls dot activedot" onclick="gotoNpause(0)" >fiber_manual_record</span>
+    <span class="controls dot" onclick="gotoNpause(1)">fiber_manual_record</span>
+    <span class="controls dot" onclick="gotoNpause(2)">fiber_manual_record</span>
+    <span class="controls dot" onclick="gotoNpause(3)">fiber_manual_record</span>
+    <span class="controls dot" onclick="gotoNpause(4)">fiber_manual_record</span>
+    <span class="controls prenxt" id="next">navigate_next</span>
+  </i>
+      </div>
+</div>
+<!-- hero container ends here &#10074;&#10074; -->
+<!-- Body content starts here -->
+<div class="welcomebanner1">
+    <div class="welcomebanner2 f-delius f-head1 doubletopborder"> Welcome to Community Forum </div> 
+     <div class="welcomebanner3 f-handlee f-para1">
+        
+        Place where you can share your experiences, feelings and views freely with like minded community members on topics of your choice. Browse through topics that interest you, share you views through comments and express yourself. You can also start your own thread or write an article or blog on existing topic.  
+    </div>
+    <div class="welcomebanner3 f-handlee f-para1 login1" style="border-style:solid; border-width:0px 0px 0px 0px; border-color: #131379 ;">
+        You need to login to post comments or write an article / blog, however, as a guest you can browse through articles and comments already posted as on date.
+    </div></div>
+
+<!-- Responsive Posts and Topics -->
+   <div class="postspagination1 f-handlee f-para1" id="posts1"> Latest trending topics and discussions are listed below</div>
+ <!-- Posts Pagination starts here -->
+    <div class="postspagination2 f-roboto f-para1">
+        <div class="postcount1" style="font-size:0.8em;"> Posts 1 to .. of ..  </div> 
+        <div class="postpages1">
+        <i class="material-icons">navigate_beforelooks_onelooks_twolooks_3looks_4looks_5navigate_next</i> 
+        </div>
+    </div>   
+ <!-- Posts Pagination ends here -->
+    
+<!-- topicspostscontainer starts here -->
+<div class="topicspostscontainer1" >  
+    <div class="topics-rightbar-container1" >  
+    <!-- <i class="material-icons">fast_rewind</i>-->
+    <div class="topics-rightbar-arrow1" onclick="topicsrightbararrow1();" >
+        <i class="fa fa-angle-double-left"></i> 
+        <div class="verticalfont1 f-delius rb-head1">&nbsp;Topics&nbsp;</div>
+    </div>
+    
+   <div class="topics-rightbar-wrapper1" id="topicsrightbarwrapper1id" >  
+       <i class="material-icons" onclick="closetopicsrightbararrow1();">close </i>
+        <div class="sb-topicshead rb-head1 f-delius"> Topics </div>  
+            <div class="sb-topicslist rb-para1 f-handlee" id="sb-topicslist" > 
+                <a href=#posts1 class="sb-topicslistitem" >Travel</a> 
+                <a href=#posts1 class="sb-topicslistitem" >Leisure</a> 
+                <a href=#posts1 class="sb-topicslistitem" >Sports</a> 
+                <a href=#posts1 class="sb-topicslistitem" >Food</a> 
+                <a href=#posts1 class="sb-topicslistitem" >Entertainment</a> 
+                <a href=#posts1 class="sb-topicslistitem" >Movies</a> 
+                <a href=#posts1 class="sb-topicslistitem" >Music</a> 
+                <a href=#posts1 class="sb-topicslistitem" >Fashion</a> 
+                <a href=#posts1 class="sb-topicslistitem" >Cars</a> 
+                <a href=#posts1 class="sb-topicslistitem" >Gadgets</a> 
+                <a href=#posts1 class="sb-topicslistitem sbactive" >All</a></div>
+    </div>  
+    </div>
+  
+<!-- postscontainer0 container starts here   -->
+<div class="postscontainer0" id="postscontainer0id">
+<!-- postscontainer1 container starts here - for every post, 2 of this to be replicated one is for image 2nd is for icon also for color theme even wrapper class to be included in every second set --> 
+<div class="postscontainer1">
+<div class="postwrapper1 rb-para1">
+    <div class="postauthor1"> 
+        <div class="postauthorimg1"> <img src="assets1/profilepic-userid.jpg">
+           <!-- <i class="material-icons" style="font-size:2em;">person</i> -->
+            <!-- for ie9 and below <i class="material-icons">&#xE7FD;</i> -->
+        </div> 
+        <div class="postauthorname1 f-handlee">Author_Name Author_Name </div>
+        <div class="posttimestamp1 f-roboto"> Time-Stamp: dd-mmm-yyyy 00:00:00 hrs</div>  
+    </div>
+    <div class="postmain1">
+    <div class="posthead1 f-delius">This is heading of the Post </div>
+    <div class="posttext1 f-handlee"> test font This is demo text of article for about 250 characters.... This is demo text of article for about 250 characters....This is demo text of article for about 250 characters.... This is demo text of article for about 250 characters....This is demo text of article for about 250 characters.... This is demo text of article for about 250 characters.... 
+
+    <div class="posttagswrapper1"><div class="posttopic1">Post-Topic : <div class="posttopic2">SampleTopic</div></div>
+        <div class="posttopic1">Tags: 
+            <div class="posttags1">tag1</div> <div class="posttags1">tag2</div> <div class="posttags1">tag3</div> 
+        </div></div></div>
+</div></div></div>
+    
+<!-- postscontainer1 container ends here and next may start -->
+<div class="postscontainer1">
+<div class="postwrapper1 rb-para1 postwrappereven1">
+    <div class="postauthor1"> 
+        <div class="postauthorimg1"> 
+            <i class="material-icons" style="font-size:2em;">person</i> 
+            <!-- for ie9 and below <i class="material-icons">&#xE7FD;</i> -->
+         </div> 
+        <div class="postauthorname1 f-handlee">Author_Name Author_Name </div>
+        <div class="posttimestamp1 f-roboto " > Time-Stamp: dd-mmm-yyyy 00:00:00 hrs</div>
+    </div>
+    <div class="postmain1">
+    <div class="posthead1 f-delius">This is heading of the Post </div>
+    <div class="posttext1 f-handlee"> This is demo text of article for about 250 characters.... This is demo text of article for about 250 characters....This is demo text of article for about 250 characters.... This is demo text of article for about 250 characters....This is demo text of article for about 250 characters.... This is demo text of article for about 250 characters.... 
+
+    <div class="posttagswrapper1"><div class="posttopic1">Post-Topic : <div class="posttopic2">SampleTopic</div></div>
+        <div class="posttopic1">Tags: 
+            <div class="posttags1">tag1</div> <div class="posttags1">tag2</div> <div class="posttags1">tag3</div> 
+        </div></div></div>
+</div></div></div>
+    
+     
+ <!-- Topicspostcontainer and postscontainer0 containers ends here   -->
+    </div>
+    </div>
+        
+ <!-- Posts Paginsation starts here -->
+    <div class="postspagination2 f-roboto f-para1">
+        <div class="postcount1" style="font-size:0.8em;"> Posts 1 to .. of ..  </div> 
+        <div class="postpages1">
+        <i class="material-icons">navigate_beforelooks_onelooks_twolooks_3looks_4looks_5navigate_next</i> 
+        </div>
+    </div>   
+ <!-- Posts Pagination ends here -->
+ 
+<!-- login form starts here -->
+<div id="formwrapperopacity1">   </div> 
+<div class="formwrapper1 f-handlee rb-para1" id="formwrapper1id">
+ <form action="#home" method="post" id="loginform1" name="userlogin1">
+     <i class="material-icons" onclick="closeloginf1();">close</i>
+     <div class="rb-head1 f-delius userloginhead1"> User Login</div>
+<div class="formcontentswrapper1">
+<div><label for="username">User ID / Email </label><input type=text class="inputtext1 f-handlee" id="username"></div>
+<div><label for="userpassword">Password </label><input type=password class="inputtext1 f-handlee" id="userpassword" ></div>
+    <!--  <label for="username"><abbr title="required">*</abbr></label>  -->
+</div>
+<div class="formbuttonswrapper1">
+<button type="submit" onclick="">Submit</button>
+<button type="reset" onclick="">Reset</button>
+</div>
+    
+     <div class="forgotpass1"><u>Forgot Password </u></div> 
+     <div class="register1" onclick="closeloginf1(); registerf1();"><u>Register</u></div>
+     &nbsp;
+</form>
+</div>
+<!-- login form ends here -->
+ 
+<!-- Registration form starts here -->
+<div id="formwrapperopacity2">   </div> 
+<div class="formwrapper2 f-handlee rb-para1" id="formwrapper2id">
+ <form action="#home" method="post" id="registerform1" name="userregister1">
+     <i class="material-icons miclose2" onclick="closeregisterf1();">close</i>
+     <div class="rb-head1 f-delius userloginhead1"> User Registration</div>
+<div class="formcontentswrapper2">
+<div><label for="useremail">Email </label><input type=text class="inputtext1 f-handlee" id="useremail"></div>
+<div><label for="userid">User ID</label><input type=text class="inputtext1 f-handlee" id="userid"></div>
+<div><label for="userpassword">Password </label><input type=password class="inputtext1 f-handlee" id="userpassword" ></div>
+<div><label for="confirmuserpassword">Confirm Password </label><input type=password class="inputtext1 f-handlee" id="confirmuserpassword" ></div>
+    <!--  <label for="username"><abbr title="required">*</abbr></label>  -->
+</div>
+<div class="formbuttonswrapper1">
+<button type="submit" onclick="">Submit</button>
+<button type="reset" onclick="">Reset</button>
+</div>
+
+</form>
+</div>
+<!-- registration form ends here -->    
+ 
+<!-- Footer starts here -->
+<div class="footerwrapper1 f-roboto"> 
+   &#169; Copyright. All Rights Reserved</div>
+
+<!-- Footer ends here -->
+
+    
+    
+<script src="animate1/animate1.js"></script>
+<script>
+
+function loginf1(){
+document.getElementById("formwrapperopacity1").style.display = "block"  ; 
+document.getElementById("formwrapper1id").style.display = "block"  ; 
+ }
+
+function closeloginf1(){
+document.getElementById("formwrapperopacity1").style.display = "none"  ; 
+document.getElementById("formwrapper1id").style.display = "none"  ; 
+}
+
+formwrapperopacity1.onclick = closeloginf1;  
+
+function registerf1(){
+document.getElementById("formwrapperopacity2").style.display = "block"  ; 
+document.getElementById("formwrapper2id").style.display = "block"  ; 
+ }
+
+function closeregisterf1(){
+document.getElementById("formwrapperopacity2").style.display = "none"  ; 
+document.getElementById("formwrapper2id").style.display = "none"  ; 
+
+}
+
+formwrapperopacity2.onclick = closeregisterf1;  
+
+/*right bar related functions*/
+    function topicsrightbararrow1(){
+        var styl= `<style>
+                    @media only screen and (max-width: 599.99px) {
+                        .topics-rightbar-wrapper1{display:block; width: 120px ; float:right;}   
+                        .topics-rightbar-arrow1{display:none; }
+                        .topics-rightbar-wrapper1 > i {display:block; float:right; font-size: 16px; 
+                                            padding:4px 1px; color:white; background-color: #131379;} 
+                        @media only screen and (min-width: 450px) {
+                            .postscontainer0{ width: calc(100% - 120px);}
+                        }
+                    }
+                    </style>` ;
+        document.getElementById("formwrapperopacity2").innerHTML = styl ;
+    }
+   function closetopicsrightbararrow1(){
+       document.getElementById("formwrapperopacity2").innerHTML = "" ;
+   }
+
+</script>
+
+</body>
+</html>

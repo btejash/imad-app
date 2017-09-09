@@ -1,0 +1,296 @@
+/*Standard box sizing and other overall responsive code -font setting also done in here*/
+ * { box-sizing: border-box; margin:0; padding:0;  }
+ html { font-family: 'Roboto', "Lucida Sans", sans-serif; }
+
+/* fonts for main body */
+.f-delius { font-family: 'Delius Swash Caps', cursive; } 
+.f-roboto {font-family: 'Roboto', "Lucida Sans", sans-serif;}
+
+/*  common content */
+/* welcome banner is here */
+.welcomebanner2 { display: block; width:100%;  color:#131379 ; text-align:center; padding: 2px 2px 6px 2px;}
+.doubletopborder {border-top-width:6px; border-top-color: #131379 ;  border-top-style:double;  }
+.welcomebanner3 { width:100%; text-align:justify; color: #131379 ; padding: 5px 10px;  }
+
+/* server content - articles list is here */
+.postspagination1 {background-color:#e7f2f2 ; border-radius: 15px; color:#131379;
+                    border-width:6px 0px 6px 0px; border-color: #131379 ;  border-style:double; padding: 5px 10px; }
+.postspagination2 {background-color:#eaeaea;  color:#131379; padding: 10px 10px 0px 10px; margin:10px 0px;
+                    width:100%; display:block; float:left; border-radius: 15px;}
+
+
+/* common content for post listing  */
+    .postauthor1 { display:block;  padding: 1px;  float:left;
+       border-style:dotted; border-width:2px; border-color: #131379 ; border-radius:10px; height:100%; }
+/*post author image / icon settings */
+    .postauthorimg1{  text-align:center;border-style:solid; border-width:0px; border-color: #131379 ; }
+    .postauthorimg1 img{ max-height: 60px; max-width:60px; width:100%; height:100%;}
+/*post author name and timestamp settings */
+    .postauthorname1{font-size: 0.9em; word-wrap:break-word; text-align: left; }
+    .posttimestamp1{font-size: 0.8em; line-height: 1.2em; word-wrap:break-word; text-align: left; }
+/*post tags and topic */
+    .posttagswrapper1 { padding: 10px 1px;}
+    .posttopic1 {display:block; padding: 1px 0px 4px 0px; } 
+    .posttopic2 {display: inline-block; }
+    .posttags1 { display: inline-block; background-color: darkslateblue; color: white; font-size:0.8em; 
+                 padding:0.2em 0.4em; border-radius:5px;}
+/* post heading and body settings */
+    .postmain1 { display: block; padding:2px 4px 4px 4px; }
+    .posthead1 { font-size: 1.4em; padding: 0 0 0.5em 0;}
+    .posttext1{ text-align:justify;}
+/* wrappers and containers for overall styling and even odd background setting */
+    .postwrapper1 { width: 100%;float:left; border-radius:10px; padding: 4px; color: #131379; background-color: #f8f8f8;   }
+    .postwrappereven1 { color: #131379; background-color: #eaeaea;  }
+    .postscontainer1 { display:block; clear:both;  width: 100%; float:left; padding: 4px; background-color: #ffffff; }
+    .postscontainer0 { display:block; float:left; padding: 0px; background-color: #ffffff; }
+ 
+    .topicspostscontainer1 { display:block; clear:both;  width: 100%; float:left; padding: 0px; background-color: #ffffff; }
+
+/* For mobile phones: Small Display */
+@media screen and (max-width: 599.99px) {
+    /* for width 350px and below */
+     .f-head1 {  font-size:16px; }
+     .f-para1 {  font-size:14px; }
+         
+     /* specific content for responsive pagination  */
+      .postcount1 {display:none;}
+      .postpages1 { float:left; width:100%; text-align: center;}
+
+    /* specific content for post listing  */
+         .postauthor1 { width:100%; }
+         .postauthorimg1 { width:10%; float:left; }
+         .postmain1{ width:100%;  float:left;}
+         .postauthorname1, .posttimestamp1{display: block; width:89%; float:right; }
+         .postauthorname1 {margin-bottom: 0.3em;}
+
+    /* For mobile phones: Bigger Display more than 350 px */
+    @media only screen and (min-width: 350px) {
+        /* Font Settings for Heading(tfonth) Subheading(tfonts) and Menu(tfontm) */
+        .f-head1 {  font-size:21px; }
+        .f-para1 {  font-size:15px; }
+    }
+}
+
+/* For tablets: */
+  @media only screen and (min-width: 600px) {
+    /* Font Settings for Heading and Paragraph */
+    .f-head1 {  font-size:32px; }
+    .f-para1 {  font-size:18px; }
+      
+      /* specific content for responsive pagination  */
+      .postcount1 {display:block; float:left; width:35%; text-align: left;}
+      .postpages1 { display:block; float:right; width:64%; text-align: right;}
+
+  /* specific content for post listing  */
+    .postmain1 { width:79%; float:right; }
+    .postauthor1 {  width:20%; }
+    .postauthorimg1 { width:100%; float:none; }
+    .postauthorname1{ width:100%; margin-bottom: 0.9em; float:none; }
+    .posttimestamp1{ width:100%; margin-bottom: 0.9em; float:none; }
+
+
+      /* For Desktops: */
+      @media only screen and (min-width: 800px) {
+            /* Font Settings for Heading(dfonth) Subheading(dfonts) and Menu(dfontm) */
+            .f-head1 {  font-size:40px; }
+            .f-para1 {  font-size:22px; }
+        }
+}
+
+
+/* topics right bar section starts here */
+.topics-rightbar-container1 { display: block; position:sticky; top:15%;float:right; color: #131379; 
+                            padding: 0px; margin:0px;  }
+
+.topics-rightbar-arrow1 { position:sticky; float:left; top:50%;   }
+
+.topics-rightbar-wrapper1 { height:100%; background-color: #e7f2f2; border-radius:15px 0px 0px 15px;   } 
+.sb-topicshead {text-align: center; text-decoration-skip: ink ; text-decoration-line: underline; padding:15px 1px 10px 1px;}
+.sb-topicslistitem { text-decoration:none; display: block; }   
+   
+.topics-rightbar-wrapper1 a:hover , .topics-rightbar-wrapper1 a:focus, .sbactive {background-color: rgba(19, 19, 121, 0.77) ;  color: white; border-radius:10px; }
+.verticalfont1 {display:block; width:1px; word-wrap: break-word; white-space: pre-wrap; }
+
+@media only screen and (max-width: 599.99px) {
+    .topics-rightbar-arrow1{display:block; background-color: #e7f2f2; border-radius: 10px 0 0 10px; padding: 0 0 0 3px; font-size:24px; }
+    .topics-rightbar-wrapper1 {display:none;}  
+    .topics-rightbar-wrapper1 > i {display:none;}
+     
+    .topics-rightbar-container1 {width:17px;}
+    .postscontainer0 { width: calc(100% - 17.5px);}
+    
+
+    .rb-head1 {font-size:22px;}
+    .rb-para1 {font-size:14px;}
+    .sb-topicslistitem{padding: 4px 2px 4px 16px;}
+      
+    .topics-rightbar-container1:hover .topics-rightbar-wrapper1 {display:block; width: 120px ; float:right;}    
+    .topics-rightbar-container1:focus1 .topics-rightbar-wrapper1{display:block; width: 120px ; float:right;}   
+    .topics-rightbar-container1:hover .topics-rightbar-arrow1 {display:none; }
+    .topics-rightbar-container1:focus1 .topics-rightbar-arrow1{display:none; }
+   
+    @media only screen and (min-width: 350px) {
+        .rb-head1 {font-size:25px;}
+        .rb-para1{font-size:15px;} 
+        .topics-rightbar-arrow1{ font-size:28px; }
+         .topics-rightbar-container1 {width:19px;}
+    .postscontainer0 { width: calc(100% - 19.5px);}
+        
+            @media only screen and (min-width: 450px) {
+            .rb-head1 {font-size:25px;}
+            .rb-para1{font-size:15px;} 
+            .topicspostscontainer1 .topics-rightbar-container1:hover + .postscontainer0 { width: calc(100% - 120px);} 
+            .topicspostscontainer1 .topics-rightbar-container1:focus1 + .postscontainer0 { width: calc(100% - 120px);}
+        }
+    }
+}
+    
+@media only screen and (min-width: 600px) {
+   /* .topics-rightbar-container1 settings*/
+    .topics-rightbar-arrow1{display:none; }
+    .topics-rightbar-wrapper1 {display:block; width: 100%; float:right;}
+    .topics-rightbar-wrapper1 > i {display:none;} 
+    .rb-head1 {font-size:26px;}
+    .rb-para1 {font-size:17px;}
+    
+    .sb-topicslistitem {padding: 4px 2px 4px 16px;}
+    .topics-rightbar-container1 {width:140px;}
+    .postscontainer0 { width: calc(100% - 141px);}
+    
+    @media only screen and (min-width: 1000px) {
+    .rb-head1 {font-size:32px;}
+    .rb-para1 {font-size:20px;}
+    .sb-topicslistitem {padding: 4px 2px 4px 22px;}
+    .topics-rightbar-container1 {width:190px;}
+    .postscontainer0 { width: calc(100% - 191px);}
+    }
+}
+
+/*topics right-bar section ends here */
+
+/* user login form styling starts here */
+.formwrapper1, #formwrapperopacity1{display:none;}
+#formwrapperopacity1{ position:fixed; top:0; left:0; z-index:13; 
+                        opacity:0.7; background-color:black;
+                        height:100%; width:100%; }
+
+.formwrapper1 { background-color:bisque; color: #131379; margin:0px; border-radius:15px;
+                border-style:groove; border-width:6px; border-color: #131379 ;  border-color: #9292cc;}
+
+.formwrapper1 i:hover {cursor: pointer;}
+.formwrapper1 i {float:right; margin:6px 6px 0 0; padding:2px; color:white; background-color:#131379;  } 
+.userloginhead1 {clear:both; text-align: center;}
+
+.formbuttonswrapper1 {display:block; padding: 20px 1px; text-align:center; }
+.formwrapper1 .forgotpass1 { clear:both;display:block; width:50%; text-align: center; padding:1px; float:left;}
+.formwrapper1 .register1 { display:block; width:50%; text-align: center; padding:1px; float:left; }
+.formwrapper1 .register1 u:hover, .formwrapper1 .forgotpass1 u:hover {   cursor: pointer; }
+
+@media only screen and (max-width: 599.99px) {
+    .formwrapper1 { position:fixed; top:10%; z-index:14; width:96%; left : 2%;  padding: 0px; }
+    .formcontentswrapper1{width:100%;}
+
+    .formwrapper1 i { font-size:16px; border-radius:7px; }
+    .userloginhead1 { padding:0px 2px 0px 2px;}
+
+    .formcontentswrapper1 input { display:block; width:96%; font-size:1em; padding:2px; margin:0px 4px; }
+    .formcontentswrapper1 label {display: block; text-align:left; width: 98%; font-size:1.1em;}
+    .formcontentswrapper1 label {padding: 10px 4px 0px 4px; }
+
+    .formbuttonswrapper1 button {display: inline-block; text-align:center;  font-size:1em; width: 70px;  padding:4px 4px; border-radius: 15px; }
+        
+@media only screen and (min-width: 350px) {
+    .formwrapper1 { position:fixed; top:10%; z-index:14; width:325px; left : calc((100% - 325px) / 2);
+                    padding: 0px; border-width:6px; }
+    .formcontentswrapper1{width:100%;}
+    .userloginhead1 { padding:0px 2px 20px 2px;}
+    .formcontentswrapper1 input {display: inline-block;max-width: 180px; width:62%; font-size:1em; 
+                                padding:2px; margin:4px; }
+    .formcontentswrapper1 label {display: inline-block; text-align:right; width: 38%; font-size:1.1em;}
+    .formcontentswrapper1 label {padding:4px 8px 4px 4px; }
+
+    .formbuttonswrapper1 button {display: inline-block; text-align:center;  font-size:1em; 
+                                width: 100px;  padding:4px 4px; border-radius: 15px; }
+    .formwrapper1 i { font-size:16px; border-radius:7px; }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .formwrapper1 { position:fixed; top:10%; z-index:14; width:500px; left : calc((100% - 500px) / 2); 
+                    padding: 0px; border-width:10px;}
+    .formcontentswrapper1{width:100%;}
+
+    .formwrapper1 i { font-size:24px; border-radius:10px; }
+    .userloginhead1 { padding:0px 2px 20px 2px;}
+    .formcontentswrapper1 input {max-width: 240px; width:62%; font-size:1em; padding:2px; margin:4px; }
+    .formcontentswrapper1 label {display: inline-block; text-align:right; width: 38%;font-size:1.1em; }
+    .formcontentswrapper1 label {padding:4px 20px 4px 4px; }
+    .formbuttonswrapper1 button {display: inline-block; text-align:center;  font-size:1em; 
+                                width: 100px;  padding:4px 4px; border-radius: 15px; }
+}
+/* user login form styling ends here */
+
+
+/* user Registration form styling starts here */
+.formwrapper2, #formwrapperopacity2{display:none;}
+#formwrapperopacity2{ position:fixed; top:0; left:0; z-index:13; 
+                        opacity:0.7; background-color:black;
+                        height:100%; width:100%; }
+
+.formwrapper2 { background-color:bisque; color: #131379;  
+                margin:0px;
+                border-style:groove; border-width:6px; border-color: #131379 ; border-radius:15px; border-color: #9292cc;}
+
+.userloginhead1 {clear:both; text-align: center;}
+
+.formbuttonswrapper1 {display:block; padding: 20px 1px; text-align:center; }
+
+.miclose2:hover {cursor: pointer;}
+.miclose2 {float:right; margin:6px 6px 0 0; padding:2px;  
+                color:white; background-color:#131379;  } 
+
+@media only screen and (max-width: 599.99px) {
+    .formwrapper2 { position:fixed; top:10%; z-index:14; width:96%; left : 2%;  padding: 0px; }
+    .formcontentswrapper2{width:100%;}
+        .userloginhead1 { padding:0px 2px 0px 2px;}
+    .formcontentswrapper2 input { display:block; width:96%; font-size:1em; padding:2px; margin:0px 4px; }
+
+    .formcontentswrapper2 label {display: block; text-align:left; width: 98%; font-size:1.1em;}
+    .formcontentswrapper2 label {padding: 10px 4px 0px 4px; }
+
+    .formbuttonswrapper1 button {display: inline-block; text-align:center;  font-size:1em; width: 70px;  padding:4px 4px; border-radius: 15px; }
+
+    .miclose2 { font-size:16px; border-radius:7px; }
+
+  @media only screen and (min-width: 350px) {
+    .formwrapper2 { position:fixed; top:10%; z-index:14; width:325px; left : calc((100% - 325px) / 2);  padding: 0px; border-width:6px; }
+    .formcontentswrapper2{width:100%;}
+         .userloginhead1 { padding:0px 2px 20px 2px;}
+    .formcontentswrapper2 input {display: inline-block;max-width: 180px; width:62%; font-size:1em; padding:2px; margin:4px; }
+
+    .formcontentswrapper2 label {display: inline-block; text-align:right; width: 38%;  
+        font-size:1.1em;}
+    .formcontentswrapper2 label {padding:4px 8px 4px 4px; }
+
+    .formbuttonswrapper1 button {display: inline-block; text-align:center;  font-size:1em; width: 100px;  padding:4px 4px; border-radius: 15px; }
+
+    .miclose2 { font-size:16px; border-radius:7px; }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+.formwrapper2 { position:fixed; top:10%; z-index:14; width:540px; left : calc((100% - 540px) / 2);  padding: 0px; border-width:10px;}
+.formcontentswrapper2{width:100%;}
+     .userloginhead1 { padding:0px 2px 20px 2px;}
+.formcontentswrapper2 input {max-width: 240px; width:62%; font-size:1em; padding:2px; margin:4px; }
+
+.formcontentswrapper2 label {display: inline-block; text-align:right; width: 38%;font-size:1.1em; }
+.formcontentswrapper2 label {padding:4px 20px 4px 4px; }
+
+.formbuttonswrapper1 button {display: inline-block; text-align:center;  font-size:1em; width: 100px;  padding:4px 4px; border-radius: 15px; }
+    
+.miclose2 { font-size:24px; border-radius:10px; }
+ 
+}
+
+/* user Registration form styling starts here */
