@@ -25,6 +25,10 @@ app.get('/animate1/:filename1', function (req, res) {
     var filename2 = req.params.filename1
   res.sendFile(path.join(__dirname, 'ui/animate1', filename2));
 });
+app.get('/animate1/images/:filename1', function (req, res) {
+    var filename2 = req.params.filename1
+  res.sendFile(path.join(__dirname, 'ui/animate1/images', filename2));
+});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
