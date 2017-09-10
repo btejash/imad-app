@@ -13,6 +13,15 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
+// profile page created
+app.get('/profile', function (req, res) {
+     res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
+});
+
 /* for cforum site access provided to folder all files if name is correctly provided */
 app.get('/cforum', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'cforum.html'));
@@ -31,9 +40,6 @@ app.get('/animate1/Images1/:filename1', function (req, res) {
 });
 /* cforum related ends here */
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
